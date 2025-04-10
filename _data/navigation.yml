@@ -3,6 +3,10 @@
   link: /
 - name: Personajes
   link: /personajes/
+- name: Animatico
+  link: /animatico/
+- name: Artwork
+  link: /artwork/
 - name: Acerca
   link: /about/
 - name: Contacto

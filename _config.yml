@@ -1,13 +1,22 @@
 # _config.yml
 title: Abisal Wiki
 theme: minima
+url: "https://SagarinnusUPB.github.io"
+baseurl: ""
 plugins:
   - jekyll-feed
 
-# Incluir páginas desde la carpeta _pages
 include:
   - _pages
 
-# Configuración para GitHub Pages (si lo subirás a GitHub)
-url: "https://SagarinnusUPB.github.io"  # Cambia esto
-baseurl: ""  # Deja vacío si es tu sitio principal (user.github.io)
+collections:
+  artworks:
+    output: true
+    permalink: /artwork/:name/
+
+defaults:
+  - scope:
+      path: "_artworks"
+      type: artworks
+    values:
+      layout: artwork

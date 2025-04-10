@@ -233,3 +233,160 @@ button, [role="button"] {
 button:hover {
   background: var(--color-primary-dark);
 }
+
+/* ============================================= */
+/* Estilos para página Animatico */
+/* ============================================= */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 9/16 = 0.5625 (Relación 16:9) */
+  height: 0;
+  max-width: 800px; /* Opcional: limita el ancho máximo */
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .video-container {
+    margin: 3rem auto;
+  }
+}
+
+/* ============================================= */
+/* Galería Artwork */
+/* ============================================= */
+.gallery-artwork {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.artwork-card {
+  background: var(--color-surface);
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.artwork-card:hover {
+  transform: translateY(-5px);
+}
+
+.artwork-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.artwork-info {
+  padding: 1.2rem;
+}
+
+.artwork-info h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.artwork-info p {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.artwork-date {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .gallery-artwork {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .artwork-card img {
+    height: 200px;
+  }
+}
+
+/* ============================================= */
+/* Detalle de Artwork */
+/* ============================================= */
+.artwork-detail {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.detail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin: 1.5rem 0;
+}
+
+.artwork-meta {
+  text-align: center;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+
+.artwork-content {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .artwork-detail {
+    padding: 0 2rem;
+  }
+  
+  .detail-image {
+    margin: 2rem 0;
+  }
+}
+
+/* Estilos para bloques especiales */
+.nota {
+  background: var(--color-primary-light);
+  padding: 1rem;
+  border-left: 4px solid var(--color-primary);
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+/* Mejoras de espaciado */
+.artwork-content ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.artwork-content li {
+  margin-bottom: 0.5rem;
+}

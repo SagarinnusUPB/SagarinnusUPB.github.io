@@ -1,0 +1,28 @@
+- image: "storyboard-1.jpg"
+  title: "Storyboard Escena 1"
+  permalink: "/artwork/storyboard-1/"
+  description: "Primeros bocetos de la secuencia de introducción"
+  date: "2024-03-15"
+  full_description: |
+    ## Proceso completo de creación:
+    
+    - **Técnica:** Lápiz grafito sobre papel
+    - **Tiempo de ejecución:** 3 horas
+    - **Software usado:** Photoshop
+    
+    <div class="nota">
+      Estos bocetos fueron la base para la animación final.
+    </div>
+
+- image: "storyboard-2.jpg"
+  title: "Storyboard Escena 1"
+  description: "Primeros bocetos de la secuencia de introducción"
+  date: "2024-03-15"
+  permalink: "/artworks/storyboard-2/"  # <- Nuevo campo
+  full_description: |
+    <p>Proceso completo de creación:</p>
+    <ul>
+      <li>Técnica: Lápiz grafito sobre papel</li>
+      <li>Tiempo de ejecución: 3 horas</li>
+      <li>Software usado: Photoshop</li>
+    </ul>

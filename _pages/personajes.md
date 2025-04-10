@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Personajes
+title: Abisal Wiki - Personajes
 permalink: /personajes/
 ---
 
