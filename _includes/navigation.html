@@ -1,12 +1,9 @@
 <!-- _includes/navigation.html -->
 <nav>
-  <ul>
+  <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div>
+  <ul id="menu">
     {% for item in site.data.navigation %}
-      <li>
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
-          {{ item.name }}
-        </a>
-      </li>
+      <li><a href="{{ item.link }}">{{ item.name }}</a></li>
     {% endfor %}
   </ul>
 </nav>
