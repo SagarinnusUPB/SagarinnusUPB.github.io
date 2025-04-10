@@ -2,4 +2,4 @@
 layout: default
 title: Inicio
 ---
-¡Bienvenido a mi sitio! 🌟
+¡Bienvenido a la Wiki Abisal! 🌟
