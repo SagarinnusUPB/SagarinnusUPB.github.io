@@ -1,0 +1,9 @@
+# _data/navigation.yml
+- name: Inicio
+  link: /
+- name: Personajes
+  link: /personajes/
+- name: Acerca
+  link: /about/
+- name: Contacto
+  link: /contact/
