@@ -117,7 +117,7 @@ permalink: /manual/
       </div>
 
       <div class="step-card">
-        <h3>Paso 4 - Ejecución y Consecuencias</h3>
+        <h3>En cualquier momento</h3>
         <p>En cualquier momento los jugadores pueden acusar a un integrante de ser el saboteador. Si esto ocurre esta persona debe mostrar su rol y se resuelve de la siguiente manera:</p>
         <ol class="consequence-steps">
           <li>Si el rol oculto era el de belicista. Este jugador es eliminado.</li>
