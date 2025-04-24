@@ -1,0 +1,9 @@
+<!-- _includes/navigation.html -->
+<nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div>
+  <ul id="menu">
+    {% for item in site.data.navigation %}
+      <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

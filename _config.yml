@@ -1,0 +1,22 @@
+# _config.yml
+title: Abisal Wiki
+theme: minima
+url: "https://SagarinnusUPB.github.io"
+baseurl: ""
+plugins:
+  - jekyll-feed
+
+include:
+  - _pages
+
+collections:
+  artworks:
+    output: true
+    permalink: /artwork/:name/
+
+defaults:
+  - scope:
+      path: "_artworks"
+      type: artworks
+    values:
+      layout: artwork

@@ -1,0 +1,47 @@
+- image: "storyboard-1.jpg"
+  title: "Storyboard Escena 1"
+  permalink: "/artwork/storyboard-1/"
+  description: "Primeros bocetos de la secuencia de introducción"
+  date: "2024-03-15"
+  full_description: |
+    ## Proceso completo de creación:
+    
+    - **Técnica:** Lápiz grafito sobre papel
+    - **Tiempo de ejecución:** 3 horas
+    - **Software usado:** Photoshop
+    
+    <div class="nota">
+      Estos bocetos fueron la base para la animación final.
+    </div>
+
+- image: "storyboard-2.jpg"
+  title: "Storyboard Escena 1"
+  description: "Primeros bocetos de la secuencia 2"
+  date: "2024-03-15"
+  permalink: "/artwork/storyboard-2/"
+  full_description: |
+    ## Proceso completo de creación:
+    
+    - **Técnica:** Lápiz grafito sobre papel
+    - **Tiempo de ejecución:** 3 horas
+    - **Software usado:** Photoshop
+    
+    <div class="nota">
+      Estos bocetos fueron la base para la animación final.
+    </div>
+
+- image: "storyboard-3.jpg"
+  title: "Storyboard Escena 3"
+  description: "Pepe pecas pica papas con un pico"
+  date: "2024-03-15"
+  permalink: "/artwork/storyboard-3/"
+  full_description: |
+    ## Proceso completo de creación:
+    
+    - **Técnica:** Lapicero sobre papel
+    - **Tiempo de ejecución:** 3 horas
+    - **Software usado:** Photoshop
+    
+    <div class="nota">
+      Pepe pecas pica papas con un pico.
+    </div>

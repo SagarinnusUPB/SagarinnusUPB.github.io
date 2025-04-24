@@ -1,0 +1,15 @@
+# _data/navigation.yml
+- name: Inicio
+  link: /
+- name: Animatico
+  link: /animatico/
+- name: Artwork
+  link: /artwork/
+- name: Juego de mesa
+  link: /manual/
+- name: Personajes
+  link: /personajes/
+- name: Acerca
+  link: /about/
+- name: Contacto
+  link: /contact/

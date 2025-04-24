@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Imagen concepto</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+  }
+</script>
+<body>
+  <!-- _includes/navigation.html -->
+<nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div>
+  <ul id="menu">
+    
+      <li><a href="/">Inicio</a></li>
+    
+      <li><a href="/animatico/">Animatico</a></li>
+    
+      <li><a href="/artwork/">Artwork</a></li>
+    
+      <li><a href="/manual/">Juego de mesa</a></li>
+    
+      <li><a href="/personajes/">Personajes</a></li>
+    
+      <li><a href="/about/">Acerca</a></li>
+    
+      <li><a href="/contact/">Contacto</a></li>
+    
+  </ul>
+</nav> <!-- Incluye el menú -->
+  
+  <div class="content">
+    <article class="artwork-detail">
+  <a href="/artwork/" class="back-link">← Volver a Galería</a>
+  
+  <h1>Imagen concepto</h1>
+  
+  <div class="artwork-meta">
+    <span class="date">15/03/2024</span>
+  </div>
+
+  <img 
+    src="/assets/img/artwork/storyboard-1.jpg" 
+    alt="Imagen concepto" 
+    class="detail-image"
+  >
+
+  <div class="artwork-content">
+    
+<h2 id="proceso-completo-de-creación">Proceso completo de creación:</h2>
+
+<ul>
+  <li><strong>Técnica:</strong> Lápiz grafito sobre papel</li>
+  <li><strong>Tiempo de ejecución:</strong> 3 horas</li>
+  <li><strong>Software usado:</strong> Photoshop</li>
+</ul>
+
+<div class="nota">
+  Estos bocetos fueron la base para la animación final.
+</div>
+
+  </div>
+</article> <!-- Contenido de la página -->
+  </div>
+</body>
+</html>
