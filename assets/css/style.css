@@ -83,7 +83,7 @@ nav {
 -------------------------------------------------------- */
 #theme-toggle {
   position: fixed;
-  top: 1rem;
+  bottom: 1rem; 
   right: 1rem;
   background: none;
   border: none;
