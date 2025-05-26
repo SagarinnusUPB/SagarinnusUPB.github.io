@@ -1,0 +1,45 @@
+# _config.yml
+title: Abisal Wiki
+theme: minima
+url: "https://SagarinnusUPB.github.io"
+baseurl: ""
+
+plugins:
+  - jekyll-feed
+
+collections:
+  artworks:
+    output: true          # genera una página por ítem si lo necesitas
+    permalink: /artwork/:name/
+  characters:
+    output: true
+    permalink: /personajes/:name/
+  stories:
+    output: false         # solo las mostraremos en /historias
+  manual_sections:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: artworks
+    values:
+      layout: artwork-item
+  -
+    scope:
+      path: ""
+      type: characters
+    values:
+      layout: character-item
+
+# El contenido editable se guardará en:
+#   _pages/         → páginas de nivel raíz
+#   _artworks/      → tarjetas de Artwork (MD o HTML con front-matter)
+#   _characters/    → tarjetas de Personajes
+#   _stories/       → cada cuento como fichero .md
+#   _manual_sections/ → secciones sueltas del manual
+
+# Asegúrate de que la carpeta _pages/ esté incluida en include:
+include:
+  - _pages
