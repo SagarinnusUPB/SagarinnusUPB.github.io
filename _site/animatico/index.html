@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animatico</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <!-- _includes/navigation.html -->
+
+<nav>
+  <div class="nav-container">
+    <div class="logo"><a href="/">Web Abisal</a></div>
+    <ul class="nav-links">
+      
+        <li><a href="/about/">About</a></li>
+      
+        <li><a href="/animatico/">Animatico</a></li>
+      
+        <li><a href="/artwork/">Artwork</a></li>
+      
+        <li><a href="/manual/">Manual</a></li>
+      
+        <li><a href="/personajes/">Personajes</a></li>
+      
+        <li><a href="/historias/">Historias</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <button id="theme-toggle" aria-label="Cambiar tema">🌓</button>
+  </header>
+
+  <main class="content">
+    <section class="card animatico">
+  <h2>Sabotaje</h2>
+  <p>Sabotaje. Animatico realizado para el curso de Taller 1, Procesos Creativos.
+
+Realizado por:<Br>
+Isabel Alfaro<Br>
+Anna Ruiz<Br>
+Danna Caballero<Br>
+Juan D. Quiroga<Br>
+Walter Arias</p>
+
+  <div class="video-container">
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/nW_ir9ZmJW0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Web Abisal</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
+  </script>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Detectar y aplicar tema guardado
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') body.classList.add('dark');
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      const theme = body.classList.contains('dark') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+    });
+  </script>
+
+</body>
+</html>

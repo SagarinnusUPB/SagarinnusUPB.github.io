@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clara cargando a Neri</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <!-- _includes/navigation.html -->
+
+<nav>
+  <div class="nav-container">
+    <div class="logo"><a href="/">Web Abisal</a></div>
+    <ul class="nav-links">
+      
+        <li><a href="/about/">About</a></li>
+      
+        <li><a href="/animatico/">Animatico</a></li>
+      
+        <li><a href="/artwork/">Artwork</a></li>
+      
+        <li><a href="/manual/">Manual</a></li>
+      
+        <li><a href="/personajes/">Personajes</a></li>
+      
+        <li><a href="/historias/">Historias</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <button id="theme-toggle" aria-label="Cambiar tema">🌓</button>
+  </header>
+
+  <main class="content">
+    <h1>Clara cargando a Neri</h1>
+<img src="/assets/img/artwork/c_n_animatico.jpg" alt="Clara cargando a Neri">
+<p>Ideas para el Animatico</p>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Web Abisal</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
+  </script>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Detectar y aplicar tema guardado
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') body.classList.add('dark');
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      const theme = body.classList.contains('dark') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historias</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <!-- _includes/navigation.html -->
+
+<nav>
+  <div class="nav-container">
+    <div class="logo"><a href="/">Web Abisal</a></div>
+    <ul class="nav-links">
+      
+        <li><a href="/about/">About</a></li>
+      
+        <li><a href="/animatico/">Animatico</a></li>
+      
+        <li><a href="/artwork/">Artwork</a></li>
+      
+        <li><a href="/manual/">Manual</a></li>
+      
+        <li><a href="/personajes/">Personajes</a></li>
+      
+        <li><a href="/historias/">Historias</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <button id="theme-toggle" aria-label="Cambiar tema">🌓</button>
+  </header>
+
+  <main class="content">
+    <section class="cards-grid">
+  
+    <div class="card story">
+  <h3>Sabotaje</h3>
+  <p><p><br />Neri creía que estaban haciendo lo correcto. Había crecido escuchando una y otra vez las mismas historias, acerca de los humanos, codicioso, pérfidos, malvados. Sus escasas experiencias con ellos no evidenciaban lo contrario, la mayoría de los que humano que se acercaban al enclave superficial en el que vivía, no eran mas que contrabandistas de la peor calaña.
+<br /><br />Por eso, no dudo de que poner la bomba era necesario, un acto de justicia. Sin embargo, si llego a arrepentirse de participar, durante una fracción de segundo, en el momento en el que una explosión antes de tiempo sacudió los cimientos del laboratorio costero que intentaban sabotear, desencadenando una lluvia de piedras y escombros sobre Neri y su grupo.
+<br /><br />Pero el arrepentimiento fue reemplazado casi instantáneamente por un fuerte instinto protector, justo antes de que las piedras cayeran, Neri empujo a uno de sus compañeros con fuerza, evitando que recibiera lo peor del derrumbe y salvando su vida, aunque por un precio. Los escombros dejaron a Neri atrapada en el laboratorio y peor aun una de las piedras cayo sobre su brazo rasgando profundamente la piel. Neri sintió el dolor y vio la sangre justo antes de notar una presencia extraña a su espalda.
+<br /><br />Sabiendo que estaba en juego mas que su vida, se dio la vuelta para encontrarse cara a cara con uno de ellos. Una muchacha bajita con una bata blanca y mirada preocupada, muy diferente de los humanos que había conocido hasta el momento. Pero humano era humano y en su naturaleza estaba la maldad, así que, a pesar del dolor, Neri se las arreglo para sacar su pistola y apuntar a la extraña.
+<br /><br />Ella ni siquiera parpadeo, en un rápido movimiento desarmo a Neri empujándola contra el piso y tomando el arma. Neri sabía que había llegado el momento de preparase para lo peor, levanto su mano para protegerse, pero nada ocurrió. Sorprendida abrió los ojos, la humana extendía una mano hacia ella, casi como ofreciéndole ayuda, de fondo, sonaba el pitido incesante de otra de las bombas. Neri no dudo y tomo la mano que le ofrecían.
+<br /><br />El dolor fue instantáneo, la sangre volvió a brotar de la herida y Neri sintió mareo, pero la humana se acercó rápidamente y aplico un extraño dispositivo sobre la herida. El dolor desapareció tan rápido como había llegado y el sangrado paro, la humana le hizo señas de levantarse y correr. Neri se puso de pie con incredulidad, la humana no solo no le había hecho daño, también había curado su herida y ahora le ofrecía ayuda. En contra de todo lo que había aprendido hasta ahora Neri decidió confiar.
+<br /><br />Juntas corrieron por el laboratorio buscando una salida, la humana la guio por corredores intrincados que Neri nunca hubiera podido descifrar sola. Finalmente empujaron juntas la última puerta y el sonido del mar, que creyó que no iba a volver a ver, la lleno por completo de esperanza.
+<br /><br />Neri nunca olvidaría ese día, nunca olvidaría a la persona que le presto ayuda cuando no era mas que una terrorista. Antes de despedirse le entrego una capsula de protección. Salvaría la vida de la humana como ella había salvado la suya y quizás en mejores días se encontrarían de nuevo.</p>
+</p>
+</div>
+
+  
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Web Abisal</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
+  </script>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Detectar y aplicar tema guardado
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') body.classList.add('dark');
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      const theme = body.classList.contains('dark') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+    });
+  </script>
+
+</body>
+</html>

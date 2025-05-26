@@ -1,0 +1,11 @@
+---
+title: Personajes
+permalink: /personajes/
+layout: default
+---
+
+<section class="cards-grid">
+  {% for character in site.characters %}
+    {% include card-character.html character=character %}
+  {% endfor %}
+</section>

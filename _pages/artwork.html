@@ -1,0 +1,11 @@
+---
+title: Artwork
+permalink: /artwork/
+layout: default
+---
+
+<section class="cards-grid">
+  {% for artwork in site.artworks %}
+    {% include card-artwork.html artwork=artwork %}
+  {% endfor %}
+</section>

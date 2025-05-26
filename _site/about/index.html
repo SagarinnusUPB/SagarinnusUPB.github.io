@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Dream Team</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <!-- _includes/navigation.html -->
+
+<nav>
+  <div class="nav-container">
+    <div class="logo"><a href="/">Web Abisal</a></div>
+    <ul class="nav-links">
+      
+        <li><a href="/about/">About</a></li>
+      
+        <li><a href="/animatico/">Animatico</a></li>
+      
+        <li><a href="/artwork/">Artwork</a></li>
+      
+        <li><a href="/manual/">Manual</a></li>
+      
+        <li><a href="/personajes/">Personajes</a></li>
+      
+        <li><a href="/historias/">Historias</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <button id="theme-toggle" aria-label="Cambiar tema">🌓</button>
+  </header>
+
+  <main class="content">
+    <section class="cards-grid about-column">
+  
+    <div class="card person">
+  <!-- Tamaño fijo gracias a la clase avatar -->
+  <img class="avatar" src="/assets/img/team/anna.jpeg" alt="Anna Ruiz [Nanna Baskerville]" />
+  <h3>Anna Ruiz [Nanna Baskerville]</h3>
+  <p class="role">Dungeon Master</p>
+  <p>Me desenvuelvo grácil entre el caos y la destrucción como Quendi en los bosques de Lothlórien. Utilizo mi sentido arácnido (Algunos incautos lo llaman ansiedad) para escribir, rajar barbas y cobrar por ambas. Siempre me veras trabajando en algún proyecto ambicioso, tomando café a la hora del té o té a la hora del café... me gustan las dos.</p>
+</div>
+
+  
+    <div class="card person">
+  <!-- Tamaño fijo gracias a la clase avatar -->
+  <img class="avatar" src="/assets/img/team/alfaro.jpeg" alt="Alfaro Quijano" />
+  <h3>Alfaro Quijano</h3>
+  <p class="role">Garabateadora lider</p>
+  <p>Me diseñaron genéticamente para entregar 17 ideas por minuto y terminar 0.3 de ellas. Me comunico principalmente en referencias visuales y memes de nicho. Hago esculturas de arcilla que me miran raro desde la repisa, y tengo al menos 5 estilos de dibujo y ninguno consistente. El pelo verde no es estético, es una advertencia biológica, cada vez que cambia de color se ahoga un pez.</p>
+</div>
+
+  
+    <div class="card person">
+  <!-- Tamaño fijo gracias a la clase avatar -->
+  <img class="avatar" src="/assets/img/team/walter.jpeg" alt="Walter Arias [Sagarinnus]" />
+  <h3>Walter Arias [Sagarinnus]</h3>
+  <p class="role">Heroe del Tiempo (Llega tarde...)</p>
+  <p>Nací en medio de las revueltas Humano-Abisales, me criaron para ser una maquina de matar (código que veo código que lleno de errores). soy implacable, ningún .exe se me escapa. Toco la guitarra como fachada, nadie sospecha de un musico talentoso y cuando se dan cuenta PUM! consola llena de errores</p>
+</div>
+
+  
+    <div class="card person">
+  <!-- Tamaño fijo gracias a la clase avatar -->
+  <img class="avatar" src="/assets/img/team/danna.jpeg" alt="Danna Caballero" />
+  <h3>Danna Caballero</h3>
+  <p class="role">Michicita independiente</p>
+  <p>Hola, me llamo Danna. Pase toda mi vida en la base aprendiendo a ser una maquina de destrucción. pero ahora solo me gusta dibujar, dormir, comer, dormir, dibujar, dormir. A veces pongo mala cara, pero si haces silencio te dejo con vida. Soy algo así como Blancanieves, si me caes bien podría recibir una bala por ti pero sino, yo te meto la bala. Siempre trato de ser lo más sincera posible y bueno, me voy a dormir.</p>
+</div>
+
+  
+    <div class="card person">
+  <!-- Tamaño fijo gracias a la clase avatar -->
+  <img class="avatar" src="/assets/img/team/juan.jpeg" alt="Juan David Quiroga" />
+  <h3>Juan David Quiroga</h3>
+  <p class="role">100tifiko</p>
+  <p>Espécimen &#35;4987.  Diseñado para analizar patrones de ataque humano-abisal y realizar estadísticas de recursos disponibles, aunque le gustaría más jugar war-games simulando estos ataques. Cuando no lo estén vigilando constantemente, se pone a ver documentales de 3 horas sobre literalmente cualquier cosa, incluyendo las repercusiones causadas por dos streamers en el ámbito económico mundial. Con su salario casi insustanciable colecciona pedazos de cartón que dice son "valiosos" y muy importantes para el "meta".</p>
+</div>
+
+  
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Web Abisal</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
+  </script>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Detectar y aplicar tema guardado
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') body.classList.add('dark');
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      const theme = body.classList.contains('dark') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+    });
+  </script>
+
+</body>
+</html>

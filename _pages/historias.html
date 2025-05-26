@@ -1,0 +1,11 @@
+---
+title: Historias
+permalink: /historias/
+layout: default
+---
+
+<section class="cards-grid">
+  {% for story in site.stories %}
+    {% include card-story.html story=story %}
+  {% endfor %}
+</section>
