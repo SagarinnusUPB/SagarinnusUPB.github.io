@@ -3,6 +3,10 @@
 <nav>
   <div class="nav-container">
     <div class="logo"><a href="/">Web Abisal</a></div>
+
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" aria-label="Menú">&#9776;</button>
+    
     <ul class="nav-links">
       {% for item in site.data.navigation %}
         <li><a href="{{ item.link }}">{{ item.name }}</a></li>
