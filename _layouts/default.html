@@ -21,10 +21,12 @@
   </footer>
 
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.classList.toggle("active");
-    }
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav-links');
+  
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
   </script>
 
   <script>
