@@ -1,0 +1,12 @@
+<!-- _includes/navigation.html -->
+
+<nav>
+  <div class="nav-container">
+    <div class="logo"><a href="/">Web Abisal</a></div>
+    <ul class="nav-links">
+      {% for item in site.data.navigation %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

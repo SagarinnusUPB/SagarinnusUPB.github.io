@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<!-- Manual de usuario -->
+<article class="manual">
+
+  <!-- TOC (Tabla de contenido) -->
+  <nav class="toc" id="toc">
+    <h2>Contenido</h2>
+    <ul class="toc-links">
+      {% for section in site.manual_sections %}
+        <li>- <a href="#{{ section.slug }}">{{ section.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <!-- Tarjetas por sección -->
+  <div class="manual-content">
+    {% for section in site.manual_sections %}
+      <section id="{{ section.slug }}" class="manual-section card manual-card">
+        <a href="#toc" class="back-to-toc" title="Volver al contenido"></a>
+        <h2>{{ section.title }}</h2>
+        {{ section.content | markdownify }}
+      </section>
+    {% endfor %}
+  </div>
+
+</article>

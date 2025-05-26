@@ -1,0 +1,12 @@
+- name: About
+  link: /about/
+- name: Animatico
+  link: /animatico/
+- name: Artwork
+  link: /artwork/
+- name: Manual
+  link: /manual/
+- name: Personajes
+  link: /personajes/
+- name: Historias
+  link: /historias/
